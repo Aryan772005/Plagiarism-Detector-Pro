@@ -1,6 +1,6 @@
 # 📁 Code Plagiarism Detector — Complete Project Guide
 
-> A beginner-friendly C++ project for a college capstone. Compiles with one command and generates both a terminal result and a beautiful HTML report.
+> A beginner-friendly C++ project made by Aryan Singh. Compiles with one command and generates both a terminal result and a beautiful HTML report.
 
 ---
 
