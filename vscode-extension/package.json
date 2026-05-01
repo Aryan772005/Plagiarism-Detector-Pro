@@ -1,0 +1,67 @@
+{
+  "name": "code-plagiarism-detector",
+  "displayName": "Code Plagiarism Detector",
+  "description": "Auto-detects plagiarism & beautifies messy code as you write. Built for CS capstone projects.",
+  "version": "2.0.0",
+  "publisher": "capstone-project",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Other", "Formatters", "Linters"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Code Plagiarism Detector",
+      "properties": {
+        "plagiarismDetector.autoBeautifyOnSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically beautify / format messy code every time you save a file."
+        },
+        "plagiarismDetector.autoDetectOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically compare the saved file against all other open files for plagiarism."
+        },
+        "plagiarismDetector.warningThreshold": {
+          "type": "number",
+          "default": 50,
+          "description": "Show a warning when similarity % reaches this value (default 50%)."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "plagiarism.openDashboard",
+        "title": "Plagiarism Detector: Open Dashboard",
+        "icon": "$(graph)"
+      },
+      {
+        "command": "plagiarism.compare",
+        "title": "Plagiarism Detector: Compare Files",
+        "icon": "$(search)"
+      },
+      {
+        "command": "plagiarism.beautify",
+        "title": "Plagiarism Detector: Beautify Current File",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "plagiarism.stats",
+        "title": "Plagiarism Detector: Show Code Statistics",
+        "icon": "$(pulse)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        { "command": "plagiarism.beautify",       "group": "plagiarism@1" },
+        { "command": "plagiarism.compare",        "group": "plagiarism@2" },
+        { "command": "plagiarism.stats",          "group": "plagiarism@3" },
+        { "command": "plagiarism.openDashboard",  "group": "plagiarism@4" }
+      ],
+      "editor/title": [
+        { "command": "plagiarism.beautify",      "group": "navigation@1" },
+        { "command": "plagiarism.openDashboard", "group": "navigation@2" }
+      ]
+    }
+  }
+}

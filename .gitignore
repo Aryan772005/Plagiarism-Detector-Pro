@@ -1,0 +1,5 @@
+detector.exe
+result.html
+formatted_*.cpp
+temp_groq_code.txt
+run_groq.ps1
