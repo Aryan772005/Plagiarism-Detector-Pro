@@ -250,4 +250,5 @@ The generated `result.html` has:
 
 ---
 
-*Built with standard C++11 — no external libraries required.*
+*Built with standard C++11 — no external libraries required.*( BY ARYAN 772005 )
+
