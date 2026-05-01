@@ -1,6 +1,6 @@
 # 📁 Code Plagiarism Detector — Complete Project Guide
 
-> A beginner-friendly C++ project made by Aryan Singh. Compiles with one command and generates both a terminal result and a beautiful HTML report.
+> C++ project made by Aryan Singh. Compiles with one command and generates both a terminal result and a beautiful HTML report.
 
 ---
 
@@ -9,7 +9,7 @@
 ```
 ------------------------------------------------
        CODE PLAGIARISM DETECTOR
-       Built in C++ | Beginner Friendly
+       Built in C++ | 
 ------------------------------------------------
 
 Enter name of File 1: file1.cpp
