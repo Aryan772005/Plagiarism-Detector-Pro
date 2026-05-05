@@ -166,11 +166,11 @@ void generateHTML(...)
 **What it does:**
 - Opens (or creates) `result.html` using `ofstream`
 - Writes a full HTML page with:
-  - A **gradient title**
-  - Two **file info cards**
-  - A large **similarity % number** in color (green/yellow/orange/red)
-  - A **progress bar**
-  - A **table** of all matching lines
+   - A **gradient title**
+   - Two **file info cards**
+   - A large **similarity % number** in color (green/yellow/orange/red)
+   - A **progress bar**
+   - A **table** of all matching lines
 - Closes the file
 
 **No external libraries** — pure `ofstream` + string writing.
@@ -250,5 +250,15 @@ The generated `result.html` has:
 
 ---
 
-*Built with standard C++11 — no external libraries required.*( BY ARYAN 772005 )
+## 🙏 Acknowledgments
 
+This project was created by **Aryan Singh (Aryan772005)**.
+
+Special thanks to:
+- **C++ Standard Library** developers for providing robust and efficient tools (`iostream`, `fstream`, `vector`, `string`, `algorithm`)
+- **Open Source Community** for continuous inspiration and best practices
+- All contributors and users who have provided feedback and support
+
+---
+
+*Built with standard C++11 — no external libraries required.* ( BY ARYAN 772005 )
